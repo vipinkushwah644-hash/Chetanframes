@@ -3,24 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download index.html with Email + Password Auth</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-stone-50 p-6 flex flex-col items-center justify-center min-h-[220px]">
-  <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm max-w-md w-full text-center">
-    <h3 class="font-bold text-stone-800 text-lg mb-1">Chetan modern photoframe</h3>
-    <p class="text-xs text-stone-500 mb-4">Complete package with Email + Password login, Sign Up verification, Forgot Password flow, UPI/QR engine, and 3D Showcase.</p>
-    <button id="dlBtn" class="w-full py-3 bg-[#141210] hover:bg-[#C59A53] hover:text-[#141210] text-white font-bold rounded-lg transition-colors text-sm shadow-md">
-      ⬇️ Download Updated index.html
-    </button>
-  </div>
-
-  <script>
-    const fullCode = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chetan modern photoframe | Bespoke Framing Studio, Bhopal</title>
   
   <script>
@@ -29,15 +11,15 @@
       if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
       _consoleWarn.apply(console, args);
     };
-  <\/script>
+  </script>
 
-  <script src="https://cdn.tailwindcss.com"><\/script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"><\/script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"><\/script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
   <script>
     tailwind.config = {
@@ -62,7 +44,7 @@
         }
       }
     }
-  <\/script>
+  </script>
 
   <style>
     body { background-color: #FAF7F2; color: #211D1A; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
@@ -79,7 +61,7 @@
 </head>
 <body class="relative custom-scrollbar">
 
-  <!-- TOP BANNER & ROLE SWITCHER -->
+  <!-- TOP BANNER -->
   <div class="bg-brand-dark text-stone-300 text-xs py-2 px-4 border-b border-stone-800">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
       <div class="flex items-center gap-2">
@@ -99,7 +81,7 @@
     </div>
   </div>
 
-  <!-- NAVIGATION HEADER -->
+  <!-- NAVIGATION -->
   <header class="sticky top-0 z-40 bg-brand-ivory/90 backdrop-blur-md border-b border-stone-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="#home" class="flex flex-col">
@@ -136,9 +118,10 @@
     </div>
   </header>
 
-  <!-- 1. CUSTOMER VIEW -->
+  <!-- STOREFRONT -->
   <div id="customerSection">
     
+    <!-- 3D HERO CANVAS -->
     <section id="home" class="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-brand-ivory via-brand-cream/60 to-brand-ivory overflow-hidden border-b border-stone-200">
       <div id="threeHeroCanvas" class="absolute inset-0 w-full h-full pointer-events-auto cursor-grab active:cursor-grabbing"></div>
 
@@ -172,6 +155,7 @@
       </div>
     </section>
 
+    <!-- HIGHLIGHT STATS -->
     <section class="bg-brand-cream py-6 border-b border-stone-200">
       <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div><p class="font-serif text-2xl font-bold text-brand-dark">15+ Years</p><p class="text-xs text-brand-muted uppercase tracking-wider">Heritage Workshop</p></div>
@@ -181,6 +165,7 @@
       </div>
     </section>
 
+    <!-- READY MADE CATALOG -->
     <section id="readyMade" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-stone-200">
         <div>
@@ -198,6 +183,7 @@
       <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
     </section>
 
+    <!-- CUSTOMIZER STUDIO -->
     <section id="customizer" class="py-20 bg-brand-cream/80 border-y border-stone-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-14">
@@ -332,6 +318,7 @@
       </div>
     </section>
 
+    <!-- UNIQUE FRAME CONCEPT SECTION -->
     <section id="uniqueFrameIdea" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-gradient-to-br from-brand-charcoal via-brand-dark to-[#100D0B] text-white rounded-3xl p-8 sm:p-14 border border-brand-gold/30 shadow-2xl relative overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -368,6 +355,7 @@
       </div>
     </section>
 
+    <!-- POLICY SECTION -->
     <section id="replacementPolicy" class="py-12 bg-stone-100 border-t border-stone-200">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <span class="inline-block p-2 bg-amber-100 text-amber-900 rounded-full mb-3"><i data-lucide="alert-circle" class="w-6 h-6"></i></span>
@@ -376,6 +364,7 @@
       </div>
     </section>
 
+    <!-- LOCATION SECTION -->
     <section id="location" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-brand-dark text-white rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 md:grid-cols-2">
         <div class="p-8 sm:p-12 flex flex-col justify-center">
@@ -399,7 +388,7 @@
     </section>
   </div>
 
-  <!-- 2. OWNER / ADMIN PORTAL (PASSWORD LOCKED: 9977234854) -->
+  <!-- 2. OWNER / ADMIN PORTAL (PIN: 9977234854) -->
   <div id="ownerSection" class="hidden min-h-screen bg-stone-100 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -421,6 +410,7 @@
         <div class="bg-white p-5 rounded-xl border border-stone-200"><span class="text-xs text-stone-500 uppercase tracking-wider">Workshop Status</span><p class="text-sm font-bold text-emerald-600 mt-2 flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Active & Framing</p></div>
       </div>
 
+      <!-- OWNER PAYMENT CONFIGURATION -->
       <div class="bg-white rounded-xl border-2 border-emerald-500/30 shadow-sm p-6 mb-8">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-stone-100">
           <div>
@@ -462,6 +452,7 @@
         </div>
       </div>
 
+      <!-- CONFIDENTIAL IDEAS -->
       <div class="bg-white rounded-xl border-2 border-brand-gold/40 shadow-sm p-6 mb-8">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-stone-100">
           <div>
@@ -480,6 +471,7 @@
         </div>
       </div>
 
+      <!-- ORDERS QUEUE -->
       <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-6 mb-8">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-stone-100">
           <div><h3 class="font-serif text-lg font-bold text-brand-dark">Customer Orders Queue</h3><p class="text-xs text-stone-500">Orders placed online. Review payment method, delivery mode, and update production status.</p></div>
@@ -495,6 +487,7 @@
         </div>
       </div>
 
+      <!-- INVENTORY -->
       <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-6">
         <div class="flex items-center justify-between mb-4 pb-3 border-b border-stone-100">
           <div><h3 class="font-serif text-lg font-bold text-brand-dark">Store Ready-Made Frames Inventory</h3><p class="text-xs text-stone-500">Add or edit frames displayed in the customer gallery.</p></div>
@@ -602,545 +595,160 @@
     </div>
   </div>
 
-  <script>
-    const SUPABASE_PROJECT_URL = "https://zhvbreiarpabcxzjlcny.supabase.co";
-    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpodmJyZWlhcnBhYmN4empsY255Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEyMTEyMDksImV4cCI6MjEwNjc4NzIwOX0.KMoVEIkMDmdUQlzCABhkYonWE8nkGkYzB9Vc4yyk_es";
+  <!-- CART DRAWER -->
+  <div id="cartDrawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-xs transition-opacity" onclick="toggleCart()"></div>
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+        <div class="p-6 bg-brand-ivory border-b border-stone-200 flex items-center justify-between">
+          <div class="flex items-center gap-2"><i data-lucide="shopping-bag" class="w-5 h-5 text-brand-gold"></i><h3 class="font-serif text-lg font-bold text-brand-dark">Your Order Cart</h3></div>
+          <button onclick="toggleCart()" class="text-stone-400 hover:text-brand-dark"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div id="cartItemsList" class="flex-1 overflow-y-auto p-6 space-y-4 divide-y divide-stone-100"></div>
+        <div class="p-6 bg-stone-50 border-t border-stone-200 space-y-4">
+          <div class="flex justify-between text-sm"><span class="text-stone-500">Workshop Location:</span><span class="font-semibold text-brand-dark">Chola Naka, Bhopal</span></div>
+          <div class="flex justify-between text-base font-bold"><span>Total Payable:</span><span id="cartTotalDisplay" class="font-serif text-xl text-brand-dark">₹0</span></div>
+          <button onclick="startCheckoutFromCart()" class="w-full py-3.5 bg-brand-dark text-white rounded-lg font-bold text-sm hover:bg-brand-gold hover:text-brand-dark transition-colors flex items-center justify-center gap-2 shadow-md"><i data-lucide="credit-card" class="w-4 h-4"></i><span>Proceed to Checkout</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    let supabaseClient = null;
-    if (window.supabase) {
-      supabaseClient = window.supabase.createClient(SUPABASE_PROJECT_URL, SUPABASE_ANON_KEY);
-    }
+  <!-- CHECKOUT MODAL -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen px-4 py-6">
+      <div class="fixed inset-0 bg-black/60 backdrop-blur-xs" onclick="closeCheckoutModal()"></div>
+      <div class="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 sm:p-8 z-10 border border-stone-200">
+        <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-700"><i data-lucide="x" class="w-5 h-5"></i></button>
 
-    const OWNER_SECURITY_PIN = "9977234854";
-    let currentRole = 'customer';
-    let currentAuthMode = 'login'; // 'login', 'signup', or 'forgot'
-    let cart = [];
-    let authenticatedUser = null;
-    let pendingAction = null;
-    let currentCheckoutContext = null;
+        <div class="text-center mb-6">
+          <span class="inline-block px-2.5 py-0.5 bg-brand-gold/10 text-brand-gold text-[10px] font-bold rounded mb-1 uppercase tracking-wider">Secure Online Checkout</span>
+          <h3 class="font-serif text-2xl font-bold text-brand-dark">Complete Your Order</h3>
+          <p class="text-xs text-stone-500 mt-1">Select your preferred delivery and payment method.</p>
+        </div>
 
-    let shopPaymentConfig = {
-      upiId: localStorage.getItem('chetan_upi_id') || 'chetanframes@upi',
-      qrImage: localStorage.getItem('chetan_qr_image') || ''
-    };
+        <div class="bg-brand-ivory p-3.5 rounded-lg border border-stone-200 mb-6 flex justify-between items-center text-xs">
+          <div><span id="checkoutItemDescription" class="font-semibold text-brand-dark block truncate max-w-[240px]">Custom Framing Order</span><span id="checkoutUserEmail" class="text-[11px] text-stone-500">user@gmail.com</span></div>
+          <div class="text-right"><span class="text-[10px] uppercase text-stone-400 block font-medium">Payable Amount</span><span id="checkoutTotalAmount" class="font-serif text-xl font-bold text-brand-dark">₹1,100</span></div>
+        </div>
 
-    let customState = {
-      image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80",
-      mouldingClass: "moulding-gold",
-      mouldingName: "Royal Gilded Gold",
-      mouldingCost: 350,
-      size: "12x16",
-      basePrice: 750,
-      matWidth: 2,
-      matColor: "#FAF7F2",
-      matColorName: "Ivory",
-      glass: "standard",
-      glassCost: 0
-    };
-
-    let readyMadeProducts = [
-      { id: 1, title: "Lord Ganesha Spiritual Glow", category: "Spiritual", price: 1250, moulding: "Royal Gilded Gold", size: "16x20 inches", image: "https://images.unsplash.com/photo-1567591414240-e145f47053e8?auto=format&fit=crop&w=800&q=80" },
-      { id: 2, title: "Misty Pine Forests of Pachmarhi", category: "Nature", price: 1450, moulding: "Indian Teak Wood", size: "18x24 inches", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" },
-      { id: 3, title: "Heritage Fort Architecture", category: "Vintage", price: 1650, moulding: "Brushed Champagne Silver", size: "20x24 inches", image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" },
-      { id: 4, title: "Golden Aura Abstract Bloom", category: "Modern", price: 950, moulding: "Matte Obsidian Black", size: "12x16 inches", image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" },
-      { id: 5, title: "Serene Buddha in Meditation", category: "Spiritual", price: 1850, moulding: "Royal Gilded Gold", size: "20x28 inches", image: "https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=800&q=80" },
-      { id: 6, title: "Bhopal Lake Sunset Reflections", category: "Nature", price: 1350, moulding: "Indian Teak Wood", size: "16x20 inches", image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" }
-    ];
-
-    let uniqueFramePitches = [
-      { id: "IDEA-101", date: "Today, 03:15 PM", clientName: "Ananya Dixit", clientPhone: "+91 97551 22889", clientEmail: "ananya.dixit@gmail.com", idea: "3-inch deep 3D Shadow Box frame with dark green velvet interior for preserving brass temple bell and wedding garland.", dimensions: "18x24 inches", budget: "₹4,000 - ₹5,500", refImage: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=300&q=80", status: "Under Review by Owner" }
-    ];
-
-    let customOrders = [
-      { id: "CM-8041", date: "Today, 11:20 AM", customerName: "Rahul Sharma", customerEmail: "rahul.bhopal@gmail.com", customerPhone: "+91 98930 11223", photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80", size: "16x20", itemSummary: "Custom 16x20\" • Indian Teak Wood", fulfillment: "Doorstep Delivery (Prepaid Online)", price: 1550, status: "Payment Received / Framing" },
-      { id: "CM-8039", date: "Yesterday, 04:45 PM", customerName: "Pooja Verma", customerEmail: "pooja.chola@gmail.com", customerPhone: "+91 94250 44556", photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80", size: "12x16", itemSummary: "Custom 12x16\" • Royal Gilded Gold", fulfillment: "Store Pickup (Pay at Shop)", price: 1200, status: "Ready for Pickup at Chola" }
-    ];
-
-    // ========================================================
-    // AUTHENTICATION TAB CONTROLS
-    // ========================================================
-    function switchAuthTab(mode) {
-      currentAuthMode = mode;
-      const loginTab = document.getElementById('tabLoginBtn');
-      const signupTab = document.getElementById('tabSignupBtn');
-      const signupFields = document.getElementById('signupFieldsContainer');
-      const passwordContainer = document.getElementById('passwordFieldContainer');
-      const passwordLabel = document.getElementById('authPasswordLabel');
-      const passwordReqs = document.getElementById('passwordRequirements');
-      const forgotBtn = document.getElementById('forgotPasswordBtn');
-      const heading = document.getElementById('authModalHeading');
-      const subheading = document.getElementById('authModalSubheading');
-      const submitText = document.getElementById('authSubmitBtnText');
-      const nameInput = document.getElementById('signupFullNameInput');
-      const phoneInput = document.getElementById('signupPhoneInput');
-      const passwordInput = document.getElementById('authPasswordInput');
-      const tabsContainer = document.getElementById('authTabsContainer');
-      const formView = document.getElementById('authFormView');
-      const sentView = document.getElementById('authStepSent');
-
-      formView.classList.remove('hidden');
-      sentView.classList.add('hidden');
-      tabsContainer.classList.remove('hidden');
-
-      if (mode === 'signup') {
-        signupTab.className = "flex-1 pb-3 text-xs font-bold uppercase tracking-wider text-brand-dark border-b-2 border-brand-gold transition-colors";
-        loginTab.className = "flex-1 pb-3 text-xs font-bold uppercase tracking-wider text-stone-400 border-b-2 border-transparent hover:text-brand-dark transition-colors";
-        signupFields.classList.remove('hidden');
-        passwordContainer.classList.remove('hidden');
-        passwordReqs.classList.remove('hidden');
-        forgotBtn.classList.add('hidden');
-        passwordLabel.innerText = "Create Password *";
-        heading.innerText = "Create Your Account";
-        subheading.innerText = "Sign up to track orders, save custom frame designs, and checkout.";
-        submitText.innerText = "Sign Up & Verify Gmail";
-        if (nameInput) nameInput.required = true;
-        if (phoneInput) phoneInput.required = true;
-        if (passwordInput) passwordInput.required = true;
-      } else if (mode === 'login') {
-        loginTab.className = "flex-1 pb-3 text-xs font-bold uppercase tracking-wider text-brand-dark border-b-2 border-brand-gold transition-colors";
-        signupTab.className = "flex-1 pb-3 text-xs font-bold uppercase tracking-wider text-stone-400 border-b-2 border-transparent hover:text-brand-dark transition-colors";
-        signupFields.classList.add('hidden');
-        passwordContainer.classList.remove('hidden');
-        passwordReqs.classList.add('hidden');
-        forgotBtn.classList.remove('hidden');
-        passwordLabel.innerText = "Password *";
-        heading.innerText = "Customer Login";
-        subheading.innerText = "Enter your registered Gmail and password.";
-        submitText.innerText = "Log In";
-        if (nameInput) nameInput.required = false;
-        if (phoneInput) phoneInput.required = false;
-        if (passwordInput) passwordInput.required = true;
-      }
-      if (window.lucide) lucide.createIcons();
-    }
-
-    function switchToForgotFlow() {
-      currentAuthMode = 'forgot';
-      document.getElementById('authTabsContainer').classList.add('hidden');
-      document.getElementById('signupFieldsContainer').classList.add('hidden');
-      document.getElementById('passwordFieldContainer').classList.add('hidden');
-      document.getElementById('authModalHeading').innerText = "Reset Password";
-      document.getElementById('authModalSubheading').innerText = "Enter your Gmail address. We will send a secure password reset link.";
-      document.getElementById('authSubmitBtnText').innerText = "Send Password Reset Link";
-      document.getElementById('authPasswordInput').required = false;
-      if (window.lucide) lucide.createIcons();
-    }
-
-    // ========================================================
-    // SUPABASE AUTH SUBMIT HANDLER
-    // ========================================================
-    async function handleCustomerAuthSubmit(e) {
-      e.preventDefault();
-      const email = document.getElementById('authEmailInput')?.value.trim();
-      const password = document.getElementById('authPasswordInput')?.value;
-      const submitBtn = document.getElementById('authSubmitBtn');
-
-      if (!supabaseClient) {
-        alert("Supabase client is not initialized.");
-        return;
-      }
-
-      submitBtn.disabled = true;
-      const originalText = document.getElementById('authSubmitBtnText').innerText;
-      document.getElementById('authSubmitBtnText').innerText = "Processing...";
-
-      try {
-        const currentUrl = window.location.origin + window.location.pathname;
-
-        // 1. SIGN UP WITH PASSWORD + GMAIL VERIFICATION
-        if (currentAuthMode === 'signup') {
-          const name = document.getElementById('signupFullNameInput')?.value.trim();
-          const phone = document.getElementById('signupPhoneInput')?.value.trim();
-
-          const { data, error } = await supabaseClient.auth.signUp({
-            email: email,
-            password: password,
-            options: {
-              emailRedirectTo: currentUrl,
-              data: {
-                full_name: name,
-                phone: phone
-              }
-            }
-          });
-
-          if (error) throw error;
-
-          // If email confirmation is required by Supabase
-          if (data?.user && (!data.session || data.user.identities?.length === 0)) {
-            showSentScreen(email, "Check Your Email!", "We sent an activation link to verify your account. Please click the link to confirm your Gmail.");
-          } else {
-            authenticatedUser = {
-              email: data.user.email,
-              verified: true,
-              session: data.session,
-              fullName: name,
-              phone: phone
-            };
-            onAuthSuccess(email);
-          }
-
-        // 2. INSTANT LOGIN WITH GMAIL + PASSWORD (NO EMAIL NEEDED)
-        } else if (currentAuthMode === 'login') {
-          const { data, error } = await supabaseClient.auth.signInWithPassword({
-            email: email,
-            password: password
-          });
-
-          if (error) throw error;
-
-          authenticatedUser = {
-            email: data.user.email,
-            verified: true,
-            session: data.session,
-            fullName: data.user.user_metadata?.full_name || '',
-            phone: data.user.user_metadata?.phone || ''
-          };
-          onAuthSuccess(email);
-
-        // 3. FORGOT PASSWORD FLOW
-        } else if (currentAuthMode === 'forgot') {
-          const { data, error } = await supabaseClient.auth.resetPasswordForEmail(email, {
-            redirectTo: currentUrl
-          });
-
-          if (error) throw error;
-          showSentScreen(email, "Reset Link Sent!", "Check your Gmail for the password recovery link. Click it to choose a new password.");
-        }
-
-      } catch (err) {
-        alert(`⚠️ Authentication Notice: ${err.message || 'Error occurred during authentication.'}`);
-      } finally {
-        submitBtn.disabled = false;
-        document.getElementById('authSubmitBtnText').innerText = originalText;
-      }
-    }
-
-    function showSentScreen(email, heading, message) {
-      document.getElementById('authFormView').classList.add('hidden');
-      document.getElementById('authTabsContainer').classList.add('hidden');
-      document.getElementById('sentStepHeading').innerText = heading;
-      document.getElementById('displayTargetEmail').innerText = email;
-      document.getElementById('sentStepMessage').innerText = message;
-      document.getElementById('authStepSent').classList.remove('hidden');
-      if (window.lucide) lucide.createIcons();
-    }
-
-    function onAuthSuccess(email) {
-      updateAuthHeaderUI();
-      closeAuthModal();
-      alert(`🎉 Welcome! Logged in as ${authenticatedUser.fullName || email}`);
-
-      if (pendingAction === 'submitCustomOrder') triggerCheckoutModal('custom');
-      else if (pendingAction === 'cartCheckout') triggerCheckoutModal('cart');
-    }
-
-    async function checkIncomingEmailConfirmation() {
-      if (!supabaseClient) return;
-
-      // 1. Check existing session
-      const { data: { session } } = await supabaseClient.auth.getSession();
-      if (session && session.user) {
-        authenticatedUser = { 
-          email: session.user.email, 
-          verified: true, 
-          session: session,
-          fullName: session.user.user_metadata?.full_name || '',
-          phone: session.user.user_metadata?.phone || ''
-        };
-        updateAuthHeaderUI();
-        return;
-      }
-
-      // 2. Auth state listener for email link clicks (signup confirmation or password reset)
-      supabaseClient.auth.onAuthStateChange(async (event, session) => {
-        if (event === 'SIGNED_IN' && session && session.user) {
-          authenticatedUser = { 
-            email: session.user.email, 
-            verified: true, 
-            session: session,
-            fullName: session.user.user_metadata?.full_name || '',
-            phone: session.user.user_metadata?.phone || ''
-          };
-          updateAuthHeaderUI();
-          closeAuthModal();
-          if (window.location.hash) {
-            window.history.replaceState(null, null, window.location.pathname + window.location.search);
-          }
-          alert(`🎉 Email verified successfully! Welcome, ${session.user.user_metadata?.full_name || session.user.email}`);
-          if (pendingAction === 'submitCustomOrder') triggerCheckoutModal('custom');
-          else if (pendingAction === 'cartCheckout') triggerCheckoutModal('cart');
-        } else if (event === 'PASSWORD_RECOVERY') {
-          // User clicked reset password link
-          const newPass = prompt("🔑 Enter your new password (at least 6 characters):");
-          if (newPass && newPass.length >= 6) {
-            const { error } = await supabaseClient.auth.updateUser({ password: newPass });
-            if (!error) {
-              alert("✅ Password updated successfully! You can now log in with your new password.");
-            } else {
-              alert(`❌ Error updating password: ${error.message}`);
-            }
-          }
-        }
-      });
-    }
-
-    function openAuthModal(defaultMode = 'login', pendingIntent = null) {
-      pendingAction = pendingIntent;
-      switchAuthTab(defaultMode);
-      document.getElementById('authModal').classList.remove('hidden');
-    }
-
-    function closeAuthModal() {
-      document.getElementById('authModal').classList.add('hidden');
-      pendingAction = null;
-    }
-
-    function signOutUser() {
-      if (supabaseClient) supabaseClient.auth.signOut();
-      authenticatedUser = null;
-      updateAuthHeaderUI();
-      alert("You have signed out.");
-    }
-
-    function updateAuthHeaderUI() {
-      const container = document.getElementById('authHeaderContainer');
-      if (!container) return;
-      if (authenticatedUser) {
-        const displayName = authenticatedUser.fullName || authenticatedUser.email.split('@')[0];
-        container.innerHTML = `
-          <div class="flex items-center gap-2 bg-stone-100 px-3 py-1.5 rounded-lg border border-stone-200">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span class="text-xs font-semibold text-brand-dark">${displayName}</span>
-            <span class="text-[10px] text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-bold">Logged In</span>
-            <button onclick="signOutUser()" class="text-[10px] text-stone-400 hover:text-red-500 ml-1 font-semibold" title="Sign out">✕</button>
+        <form onsubmit="handleFinalOrderSubmission(event)" class="space-y-4 text-xs">
+          <div>
+            <label class="block font-bold text-brand-dark mb-1">Full Name & Mobile Number</label>
+            <div class="grid grid-cols-2 gap-2">
+              <input type="text" id="custFullName" required placeholder="Your Name" class="w-full p-2.5 border border-stone-300 rounded-lg">
+              <input type="tel" id="custPhone" required placeholder="10-digit Mobile" class="w-full p-2.5 border border-stone-300 rounded-lg">
+            </div>
           </div>
-        `;
-      } else {
-        container.innerHTML = `
-          <button onclick="openAuthModal('login')" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-stone-300 hover:border-brand-gold text-brand-dark bg-white transition-all">
-            <i data-lucide="user" class="w-3.5 h-3.5 text-brand-gold"></i>
-            <span>Login / Sign Up</span>
+
+          <div>
+            <label class="block font-bold text-brand-dark mb-2">Select Fulfillment Option</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="border-2 border-brand-gold p-3 rounded-xl cursor-pointer bg-brand-cream/40 flex flex-col justify-between" id="labelPrepaidDelivery">
+                <div class="flex items-center gap-2 mb-1"><input type="radio" name="fulfillmentType" value="delivery" checked onchange="toggleFulfillmentMode('delivery')" class="accent-brand-gold"><span class="font-bold text-brand-dark">Doorstep Delivery</span></div>
+                <span class="text-[10px] text-stone-500">Prepayment required before dispatch</span>
+              </label>
+              <label class="border border-stone-200 p-3 rounded-xl cursor-pointer hover:bg-stone-50 flex flex-col justify-between" id="labelStorePickup">
+                <div class="flex items-center gap-2 mb-1"><input type="radio" name="fulfillmentType" value="pickup" onchange="toggleFulfillmentMode('pickup')" class="accent-brand-gold"><span class="font-bold text-brand-dark">Pickup from Shop</span></div>
+                <span class="text-[10px] text-stone-500">Ganesh Mandir, Chola Naka, Bhopal</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="deliveryAddressSection">
+            <label class="block font-bold text-brand-dark mb-1">Delivery Address (Bhopal & Nationwide)</label>
+            <textarea id="deliveryAddressInput" rows="2" placeholder="House/Flat No, Landmark, Area, Bhopal (Pincode)" class="w-full p-2.5 border border-stone-300 rounded-lg"></textarea>
+          </div>
+
+          <div>
+            <label class="block font-bold text-brand-dark mb-2">Payment Method</label>
+            <div id="paymentOptionsContainer" class="space-y-3">
+              <label class="flex flex-col p-3 border rounded-xl border-brand-gold bg-amber-50/40 cursor-pointer">
+                <div class="flex items-start gap-3">
+                  <input type="radio" name="paymentMethod" value="online_prepaid" checked class="mt-0.5 accent-brand-gold">
+                  <div class="flex-1">
+                    <span class="font-bold text-brand-dark block text-xs">Pay Online via UPI / QR (Instant)</span>
+                    <span class="text-[11px] text-stone-500">Scan QR Code or pay directly to the shop's verified UPI ID.</span>
+                  </div>
+                </div>
+                <div id="checkoutQrContainer" class="mt-3 pt-3 border-t border-amber-200/60 flex flex-col sm:flex-row items-center gap-4 bg-white p-3 rounded-lg border border-stone-200">
+                  <img id="checkoutQrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=upi%3A%2F%2Fpay%3Fpa%3Dchetanframes%40upi%26pn%3DChetan%20modern%20photoframe" alt="Scan QR Code" class="w-28 h-28 object-contain border border-stone-200 rounded p-1 bg-white shadow-xs">
+                  <div class="text-left space-y-1">
+                    <span class="text-[10px] uppercase font-bold text-stone-400 block">Verified Shop UPI ID:</span>
+                    <span id="checkoutUpiIdLabel" class="font-mono text-xs font-bold text-brand-dark bg-stone-100 px-2 py-1 rounded inline-block">chetanframes@upi</span>
+                    <p class="text-[10px] text-stone-500">Scan with any UPI app (GPay, PhonePe, Paytm, BHIM).</p>
+                    <a id="checkoutUpiDirectLink" href="upi://pay?pa=chetanframes@upi&pn=Chetan%20modern%20photoframe" class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200 hover:bg-emerald-100 transition-colors">
+                      <i data-lucide="smartphone" class="w-3 h-3"></i><span>Open in UPI App</span>
+                    </a>
+                  </div>
+                </div>
+              </label>
+
+              <label id="payAtShopOption" class="hidden flex items-start gap-3 p-3 border rounded-xl border-stone-200 cursor-pointer hover:bg-stone-50">
+                <input type="radio" name="paymentMethod" value="pay_at_shop" class="mt-0.5 accent-brand-gold">
+                <div>
+                  <span class="font-bold text-brand-dark block text-xs">Pay at Shop on Collection</span>
+                  <span class="text-[11px] text-stone-500">Pay via Cash or UPI when collecting your frame at Chola Naka.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="p-3 bg-stone-50 rounded-lg border border-stone-200">
+            <label class="flex items-start gap-2.5 cursor-pointer">
+              <input type="checkbox" id="unboxingVideoClause" required class="mt-0.5 accent-brand-gold">
+              <span class="text-[11px] text-stone-600 leading-tight">
+                <strong>I agree to the Replacement & Unboxing Policy:</strong> I understand that there are strictly NO refunds. Replacement will be granted only if an unboxing video is recorded at the time of opening the parcel showing any transit damage.
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 bg-brand-dark hover:bg-brand-gold hover:text-brand-dark text-white font-bold rounded-lg transition-colors flex items-center justify-center gap-2 text-sm tracking-wide shadow-md">
+            <i data-lucide="lock" class="w-4 h-4"></i><span id="submitOrderBtnText">Confirm & Pay Online (₹1,100)</span>
           </button>
-        `;
-      }
-      if (window.lucide) lucide.createIcons();
-    }
+        </form>
+      </div>
+    </div>
+  </div>
 
-    // ========================================================
-    // PAYMENT SETUP & OWNER CONTROLS
-    // ========================================================
-    function syncOwnerPaymentUI() {
-      const upiInput = document.getElementById('ownerUpiIdInput');
-      if (upiInput) upiInput.value = shopPaymentConfig.upiId;
-      const qrUrlInput = document.getElementById('ownerQrUrlInput');
-      if (qrUrlInput) qrUrlInput.value = shopPaymentConfig.qrImage.startsWith('data:') ? '' : shopPaymentConfig.qrImage;
-      const liveLabel = document.getElementById('ownerCurrentUpiLabel');
-      if (liveLabel) liveLabel.innerText = shopPaymentConfig.upiId;
-      const liveQrImg = document.getElementById('ownerLiveQrPreview');
-      if (liveQrImg) liveQrImg.src = getActiveQrCodeUrl();
-      const checkoutUpiLabel = document.getElementById('checkoutUpiIdLabel');
-      if (checkoutUpiLabel) checkoutUpiLabel.innerText = shopPaymentConfig.upiId;
-      const checkoutQrImg = document.getElementById('checkoutQrImage');
-      if (checkoutQrImg) checkoutQrImg.src = getActiveQrCodeUrl();
-      const upiLink = document.getElementById('checkoutUpiDirectLink');
-      if (upiLink) upiLink.href = `upi://pay?pa=${encodeURIComponent(shopPaymentConfig.upiId)}&pn=${encodeURIComponent('Chetan modern photoframe')}&cu=INR`;
-    }
+  <!-- MODAL: ADD NEW READY-MADE FRAME (OWNER ONLY) -->
+  <div id="newFrameModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen px-4 py-6">
+      <div class="fixed inset-0 bg-black/50" onclick="closeNewFrameModal()"></div>
+      <div class="relative bg-white rounded-xl shadow-xl max-w-md w-full p-6 z-10">
+        <div class="flex justify-between items-center pb-3 border-b border-stone-100 mb-4">
+          <h4 class="font-serif text-lg font-bold text-brand-dark">Add New Ready-Made Frame</h4>
+          <button onclick="closeNewFrameModal()" class="text-stone-400 hover:text-stone-700"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <form id="newFrameForm" onsubmit="handleAddNewFrame(event)" class="space-y-4 text-xs">
+          <div><label class="block font-semibold mb-1">Frame Title / Name</label><input type="text" id="newTitle" required placeholder="e.g. Golden Shree Ganesh Ji Mandala" class="w-full p-2.5 border border-stone-300 rounded-lg"></div>
+          <div><label class="block font-semibold mb-1">Category</label><select id="newCategory" class="w-full p-2.5 border border-stone-300 rounded-lg"><option value="Spiritual">Spiritual</option><option value="Nature">Nature</option><option value="Modern">Modern Abstract</option><option value="Vintage">Heritage</option></select></div>
+          <div class="grid grid-cols-2 gap-3">
+            <div><label class="block font-semibold mb-1">Moulding Type</label><input type="text" id="newMoulding" required placeholder="e.g. Gilded Carved Gold" class="w-full p-2.5 border border-stone-300 rounded-lg"></div>
+            <div><label class="block font-semibold mb-1">Size (Inches)</label><input type="text" id="newDimensions" required placeholder="e.g. 18x24 in" class="w-full p-2.5 border border-stone-300 rounded-lg"></div>
+          </div>
+          <div><label class="block font-semibold mb-1">Price in ₹ (INR)</label><input type="number" id="newPrice" required placeholder="1450" class="w-full p-2.5 border border-stone-300 rounded-lg"></div>
+          <div><label class="block font-semibold mb-1">Image URL</label><input type="url" id="newImageUrl" required placeholder="https://images.unsplash.com/..." class="w-full p-2.5 border border-stone-300 rounded-lg"></div>
+          <div class="pt-3 flex gap-2">
+            <button type="button" onclick="closeNewFrameModal()" class="flex-1 py-2 border border-stone-300 rounded-lg font-semibold hover:bg-stone-50">Cancel</button>
+            <button type="submit" class="flex-1 py-2 bg-brand-dark text-white rounded-lg font-semibold hover:bg-brand-gold hover:text-brand-dark transition-colors">Publish to Store</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    function getActiveQrCodeUrl() {
-      if (shopPaymentConfig.qrImage && shopPaymentConfig.qrImage.trim() !== '') return shopPaymentConfig.qrImage;
-      return `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent('upi://pay?pa=' + shopPaymentConfig.upiId + '&pn=Chetan modern photoframe&cu=INR')}`;
-    }
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark text-stone-400 text-xs py-10 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div><p class="font-serif text-lg font-bold text-white tracking-wider">CHETAN MODERN PHOTOFRAME</p><p class="text-stone-400 mt-1">In Front of Ganesh Mandir, Chola Naka, Bhopal (M.P.)</p></div>
+      <div class="flex items-center gap-6"><a href="#customizer" class="hover:text-brand-gold transition-colors">Bespoke Customizer</a><a href="#uniqueFrameIdea" class="hover:text-brand-gold transition-colors">Pitch Unique Frame</a><a href="#replacementPolicy" class="hover:text-brand-gold transition-colors">Replacement Policy</a><a href="#location" class="hover:text-brand-gold transition-colors">Visit Chola Naka</a></div>
+      <div><p>© 2026 Chetan modern photoframe. Handcrafted in Bhopal.</p></div>
+    </div>
+  </footer>
 
-    function handleOwnerQrFileUpload(e) {
-      const file = e.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(evt) {
-          shopPaymentConfig.qrImage = evt.target.result;
-          localStorage.setItem('chetan_qr_image', evt.target.result);
-          syncOwnerPaymentUI();
-          alert("QR Code image loaded successfully!");
-        };
-        reader.readAsDataURL(file);
-      }
-    }
-
-    function handleSaveOwnerPaymentSettings(e) {
-      e.preventDefault();
-      const upiVal = document.getElementById('ownerUpiIdInput')?.value.trim();
-      const qrUrlVal = document.getElementById('ownerQrUrlInput')?.value.trim();
-      if (upiVal) { shopPaymentConfig.upiId = upiVal; localStorage.setItem('chetan_upi_id', upiVal); }
-      if (qrUrlVal) { shopPaymentConfig.qrImage = qrUrlVal; localStorage.setItem('chetan_qr_image', qrUrlVal); }
-      syncOwnerPaymentUI();
-      alert(`✅ Payment Settings Updated!\n\nStore UPI ID: ${shopPaymentConfig.upiId}`);
-    }
-
-    function handleMatChange(val) {
-      customState.matWidth = parseFloat(val);
-      const widthValEl = document.getElementById('matWidthValue');
-      if (widthValEl) widthValEl.innerText = val + " inches";
-      const matBoardEl = document.getElementById('matBoard');
-      if (matBoardEl) matBoardEl.style.padding = `${Math.round(val * 12)}px`;
-      updateCalculation();
-    }
-
-    function setMatColor(color, name) {
-      customState.matColor = color;
-      customState.matColorName = name;
-      const matBoardEl = document.getElementById('matBoard');
-      if (matBoardEl) matBoardEl.style.backgroundColor = color;
-      updateCalculation();
-    }
-
-    function promptOwnerLogin() {
-      const pin = prompt("🔐 Enter Shop Owner Master Security PIN:", "");
-      if (pin === OWNER_SECURITY_PIN) {
-        switchRole('owner');
-      } else if (pin !== null) {
-        alert("❌ Incorrect PIN. Access denied to Owner Dashboard.");
-      }
-    }
-
-    function switchRole(role) {
-      currentRole = role;
-      const custSec = document.getElementById('customerSection');
-      const ownerSec = document.getElementById('ownerSection');
-      const custBtn = document.getElementById('roleCustomerBtn');
-      const ownerBtn = document.getElementById('roleOwnerBtn');
-      const navLinks = document.getElementById('customerNavLinks');
-
-      if (role === 'owner') {
-        if (custSec) custSec.classList.add('hidden');
-        if (ownerSec) ownerSec.classList.remove('hidden');
-        if (custBtn) custBtn.className = "px-2.5 py-0.5 rounded-full text-xs font-semibold text-stone-400 hover:text-white transition-all";
-        if (ownerBtn) ownerBtn.className = "px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-gold text-brand-dark transition-all flex items-center gap-1";
-        if (navLinks) navLinks.classList.add('opacity-30', 'pointer-events-none');
-        renderOwnerTables();
-        syncOwnerPaymentUI();
-      } else {
-        if (custSec) custSec.classList.remove('hidden');
-        if (ownerSec) ownerSec.classList.add('hidden');
-        if (ownerBtn) ownerBtn.className = "px-2.5 py-0.5 rounded-full text-xs font-semibold text-stone-400 hover:text-white transition-all flex items-center gap-1";
-        if (custBtn) custBtn.className = "px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-gold text-brand-dark transition-all";
-        if (navLinks) navLinks.classList.remove('opacity-30', 'pointer-events-none');
-      }
-      if (window.lucide) lucide.createIcons();
-    }
-
-    function updateCalculation() {
-      const total = customState.basePrice + customState.mouldingCost + (customState.matWidth * 75) + customState.glassCost;
-      const formatted = "₹" + Math.round(total).toLocaleString('en-IN');
-      const calcDisplay = document.getElementById('calculatedPriceDisplay');
-      if (calcDisplay) calcDisplay.innerText = formatted;
-      const orderBtnPrice = document.getElementById('orderBtnPrice');
-      if (orderBtnPrice) orderBtnPrice.innerText = Math.round(total).toLocaleString('en-IN');
-      const specSummary = document.getElementById('currentSpecSummary');
-      if (specSummary) specSummary.innerText = `Dimensions: ${customState.size}" • Moulding: ${customState.mouldingName} • Mat: ${customState.matWidth}" ${customState.matColorName} •${customState.glass === 'museum' ? 'Anti-Glare Museum Glass' : 'Clear Acrylic'}`;
-    }
-
-    function setMoulding(key, name, cost) {
-      customState.mouldingClass = `moulding-${key}`;
-      customState.mouldingName = name;
-      customState.mouldingCost = cost;
-      const frameContainer = document.getElementById('frameContainer');
-      if (frameContainer) frameContainer.className = `transition-all duration-300 p-6 bg-white frame-shadow border-[20px] moulding-${key} max-w-[85%] max-h-[85%] flex items-center justify-center`;
-      document.querySelectorAll('#mouldingSelector .moulding-btn').forEach(b => {
-        b.classList.remove('border-brand-gold', 'bg-stone-50', 'border-2');
-        b.classList.add('border-stone-200');
-      });
-      if (window.event && window.event.currentTarget) {
-        window.event.currentTarget.classList.add('border-brand-gold', 'bg-stone-50', 'border-2');
-        window.event.currentTarget.classList.remove('border-stone-200');
-      }
-      updateCalculation();
-    }
-
-    function handleSizeChange(val) {
-      const costs = { '8x10': 450, '12x16': 750, '16x20': 1150, '20x24': 1650, '24x36': 2450 };
-      customState.size = val;
-      customState.basePrice = costs[val] || 750;
-      const dimLabel = document.getElementById('dimensionLabel');
-      if (dimLabel) dimLabel.innerText = val.replace('x', '" × ') + '"';
-      updateCalculation();
-    }
-
-    function handleGlassChange(type, cost) {
-      customState.glass = type;
-      customState.glassCost = cost;
-      const glare = document.getElementById('glassGlare');
-      if (glare) glare.style.opacity = type === 'museum' ? '0.05' : '0.7';
-      updateCalculation();
-    }
-
-    function setWallColor(color) {
-      const wall = document.getElementById('virtualWall');
-      if (wall) wall.style.backgroundColor = color;
-    }
-
-    function handleUserPhotoUpload(event) {
-      const file = event.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          customState.image = e.target.result;
-          const preview = document.getElementById('customPreviewImage');
-          if (preview) preview.src = e.target.result;
-        }
-        reader.readAsDataURL(file);
-      }
-    }
-
-    function setSamplePhoto() {
-      const sample = "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80";
-      customState.image = sample;
-      const preview = document.getElementById('customPreviewImage');
-      if (preview) preview.src = sample;
-    }
-
-    function handlePitchImageUpload(e) {
-      const file = e.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(evt) {
-          const hiddenInput = document.getElementById('pitchImageBase64');
-          if (hiddenInput) hiddenInput.value = evt.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
-    }
-
-    function submitUniqueConcept(e) {
-      e.preventDefault();
-      const name = document.getElementById('pitchName')?.value.trim() || "Anonymous";
-      const phone = document.getElementById('pitchPhone')?.value.trim() || "Not provided";
-      const email = document.getElementById('pitchEmail')?.value.trim() || "Not provided";
-      const budget = document.getElementById('pitchBudget')?.value.trim() || "Not specified";
-      const idea = document.getElementById('pitchIdeaText')?.value.trim() || "";
-      const refImg = document.getElementById('pitchImageBase64')?.value || "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=300&q=80";
-
-      const pitchId = `IDEA-${Math.floor(100 + Math.random() * 900)}`;
-      const newPitch = {
-        id: pitchId,
-        date: "Just Now",
-        clientName: name,
-        clientPhone: phone,
-        clientEmail: email,
-        idea: idea,
-        dimensions: budget,
-        budget: budget,
-        refImage: refImg,
-        status: "New Concept / Awaiting Owner Quote"
-      };
-
-      uniqueFramePitches.unshift(newPitch);
-      alert(`🌟 Concept #${pitchId} Submitted Successfully!`);
-      e.target.reset();
-      const hiddenInput = document.getElementById('pitchImageBase64');
-      if (hiddenInput) hiddenInput.value = "";
-      renderOwnerTables();
-    }
-
+  <script>
+    // CORE STORE INTERACTION HANDLERS
     function handleCustomOrderClick() {
       if (!authenticatedUser) {
         alert("🔒 Please log in or sign up first to order.");
@@ -1474,6 +1082,7 @@
       alert("New frame added successfully to Chetan modern photoframe store!");
     }
 
+    // 3D HERO CANVAS
     function init3DHero() {
       const container = document.getElementById('threeHeroCanvas');
       if (!container) return;
